@@ -79,10 +79,12 @@ flutter:
         - asset: assets/fonts/Roboto-Light.ttf
           weight: 300
         - asset: assets/fonts/Roboto-Regular.ttf
+          style: normal
           weight: 400
     - family: Billabong
       fonts:
         - asset: assets/fonts/Billabong.ttf
+          style: normal
 
   #
   # For details regarding fonts from package dependencies,
