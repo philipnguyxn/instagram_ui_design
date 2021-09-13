@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:instagram_ui/tool_bar.dart';
-import 'home_page.dart';
+import 'package:instagram_ui/home_page_ulti/tool_bar.dart';
+import 'pages/home_page.dart';
+import 'pages/search_page.dart';
+import 'home_page_ulti/tool_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,6 +27,10 @@ class MyApp extends StatelessWidget {
         iconTheme: const IconThemeData(color: Color.fromRGBO(32, 32, 32, 1)),
       ),
       home: const InstaHome(),
+      routes: {
+        HomePage.routeName: (context) => const HomePage(),
+        SearchPage.routeName: (context) => const SearchPage(),
+      },
     );
   }
 }
